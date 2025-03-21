@@ -1,12 +1,18 @@
-# React + Vite
+---
+추천 크롬 익스텐션
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+0. Reduc DevTools: state, action 관리해준다. DevTools 에서 확인 가능
+   https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ko
+   https://github.com/reduxjs/redux-devtools
+1. LocatorJS: 크롬에서 컴포넌트 alt + 마우스 좌클릭시 바로 에디터에서 해당 파일이 열림
+   https://www.locatorjs.com/
+   https://github.com/infi-pc/locatorjs
+   https://chromewebstore.google.com/detail/locatorjs/npbfdllefekhdplbkdigpncggmojpefi
 
-Currently, two official plugins are available:
+2. colorZilla: 크롬에서 스포이드로 색상 확인 및 복사
+   https://www.colorzilla.com/
+   https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=ko
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Page Ruler: 크롬 화면에서 영역 지정하여 길이 px 확인 가능
+   https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff?hl=ko
