@@ -1,9 +1,27 @@
-import { useState } from 'react'
+import {useEffect, useState} from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
+
+
+
   const [count, setCount] = useState(0)
+
+
+    useEffect(() => {
+        setCount(1)
+        console.log('**************',count)
+        setCount(2)
+        console.log('**************',count)
+
+    }, []);
+
+
+    useEffect(() => {
+        console.log('count',count)
+    }, [count]);
+
 
   return (
     <>
