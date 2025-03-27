@@ -3,6 +3,8 @@ import {
 } from "react-router";
 import HomePage from "src/pages/HomePage.jsx";
 
+//NOTE https://reactrouter.com/start/data/routing
+
 
 const MODULES = import.meta.glob('src/pages/url/**/*.jsx', {eager: true});
 
