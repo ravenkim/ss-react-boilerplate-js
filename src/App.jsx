@@ -1,6 +1,5 @@
 import {useEffect, useState} from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import {Button} from "src/shared/components/lib/shadcn/components/ui/button.jsx";
 
 function App() {
 
@@ -9,29 +8,12 @@ function App() {
   const [count, setCount] = useState(0)
 
 
-    useEffect(() => {
-        setCount(1)
-        console.log('**************',count)
-        setCount(2)
-        console.log('**************',count)
-
-    }, []);
-
-
-    useEffect(() => {
-        console.log('count',count)
-    }, [count]);
-
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+            <Button>asd</Button>
+                  </div>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
