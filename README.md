@@ -15,6 +15,34 @@ todo
 
 
 
+# 상태관리 
+
+
+선정 이유 
+
+redux 
+
+
+액션 명명 규칙 
+get~~
+
+edit ~~ 
+del ~~ 
+create __
+
+Status 뒤에 붙일것  
+
+
+
+
+
+
+SS components
+사용한 라이브러리 
+shadcn 
+이슈 - 다운로드시 cn 경로가 적용이 똑바로 안됨 cn 만 바꿔주면 됨 (components.json 수정했는대 잘 모르겠음)
+
+
 -------------------
 프리티어
 yarn exec prettier . --write
