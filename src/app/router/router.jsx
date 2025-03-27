@@ -13,6 +13,7 @@ const generateRoutes = (modules) => {
             .replace(/.*src\/pages\/url\//, "") // 'src/pages/url/' 부분 제거
             .replace(/\.jsx$/, "") // 확장자 제거
             .replace(/Page$/, "") // 'Page' 접미사 제거
+            .replace(/\[(.*?)]/g, ":$1") // [param] -> :param 변환
             .toLowerCase();
 
         const Component = module.default;
