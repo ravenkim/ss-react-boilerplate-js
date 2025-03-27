@@ -1,9 +1,23 @@
 
-동적 라우팅 생성 기능 추가 
---------------------
+-------------------
+프리티어
+yarn exec prettier . --write
+혹은 자동 정렬마다 설정 원할시
+
+웹스톰 기준 
+파일 | 설정 | 언어 및 프레임워크 | JavaScript | Prettier
+jetbrains://WebStorm/settings?name=%EC%96%B8%EC%96%B4+%EB%B0%8F+%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC--JavaScript--Prettier
+여기서 자동 활성화 혹은 저장시 적용 활성화
+
+todo  깃 커밋시 자동 적용 ex) husky
+
+-------------------------
+
+
+
+## 동적 라우팅 생성 기능 추가
+
 feature랑 파일명 구분을 위해 Page를 뒤에 붙이는걸 권장 (필수는 아님)
-
-
 
 테마 색상 설정
 https://zippystarter.com/tools/shadcn-ui-theme-generator
@@ -12,9 +26,7 @@ https://zippystarter.com/tools/shadcn-ui-theme-generator
 src/shared/components/lib/shadcn/styles/shadcn-variables.css
 에 적용
 
-
 ---
-
 
 추천 크롬 익스텐션
 
@@ -29,7 +41,6 @@ src/shared/components/lib/shadcn/styles/shadcn-variables.css
 2. colorZilla: 크롬에서 스포이드로 색상 확인 및 복사
    https://www.colorzilla.com/
    https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=ko
-
 
 3. Page Ruler: 크롬 화면에서 영역 지정하여 길이 px 확인 가능
    https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff?hl=ko

@@ -1,9 +1,5 @@
 const Sample = () => {
-    return (
-        <div>
-            vbvbvvb
-        </div>
-    );
-};
+    return <div>vbvbvvb</div>
+}
 
-export default Sample;
+export default Sample

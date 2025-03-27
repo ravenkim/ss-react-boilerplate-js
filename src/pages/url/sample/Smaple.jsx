@@ -1,9 +1,5 @@
 const Smaple = () => {
-    return (
-        <div>
-            vbnbvnbv
-        </div>
-    );
-};
+    return <div>vbnbvnbv</div>
+}
 
-export default Smaple;
+export default Smaple

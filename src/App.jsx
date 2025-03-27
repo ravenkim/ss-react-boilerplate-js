@@ -1,13 +1,8 @@
-import {useEffect, useState} from 'react'
-import {Button} from "src/shared/components/lib/shadcn/components/ui/button.jsx";
+import { useEffect, useState } from 'react'
+import { Button } from 'src/shared/components/lib/shadcn/components/ui/button.jsx'
 
 function App() {
-
-
     const [count, setCount] = useState(0)
-
-
-
 
     return (
         <>

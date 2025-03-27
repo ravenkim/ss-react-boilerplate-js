@@ -1,8 +1,4 @@
-
-
 //백엔드 에서 보내줄때는 statusCode, data, errMsg ?
-
-
 
 //프런트에서 쓰기 위해 보여주는 값들
 export const reducerUtils = {

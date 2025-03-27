@@ -1,9 +1,5 @@
 const Test = () => {
-    return (
-        <div>
-          cvbvcbcvbvc8b97cvb
-        </div>
-    );
-};
+    return <div>cvbvcbcvbvc8b97cvb</div>
+}
 
-export default Test;
+export default Test
