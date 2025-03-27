@@ -1,12 +1,39 @@
 import {
     createBrowserRouter,
 } from "react-router";
+import HomePage from "src/pages/HomePage.jsx";
+
+
+const MODULES = import.meta.glob('src/pages/url/**/*.jsx', {eager: true});
+
+const generateRoutes = (modules) => {
+    return Object.entries(modules).map(([path, module]) => {
+        // 파일 경로에서 'src/pages/url/' 이후의 경로를 추출
+        let routePath = path
+            .replace(/.*src\/pages\/url\//, "") // 'src/pages/url/' 부분 제거
+            .replace(/\.jsx$/, "") // 확장자 제거
+            .replace(/Page$/, "") // 'Page' 접미사 제거
+            .toLowerCase();
+
+        const Component = module.default;
+
+        return {
+            path: `/${routePath}`,
+            element: <Component />,
+        };
+    });
+};
+
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <div>Hello World</div>,
+        element: <HomePage/>,
     },
+    ...generateRoutes(MODULES)
+
+
 ])
+
 
 export default router;
