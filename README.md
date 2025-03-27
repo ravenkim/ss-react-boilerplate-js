@@ -1,4 +1,17 @@
+
+
+
+테마 색상 설정
+https://zippystarter.com/tools/shadcn-ui-theme-generator
+위 사이트에서 원하는 디자인 색상 추출 후
+
+src/shared/components/lib/shadcn/styles/shadcn-variables.css
+에 적용
+
+
 ---
+
+
 추천 크롬 익스텐션
 
 0. Reduc DevTools: state, action 관리해준다. DevTools 에서 확인 가능
