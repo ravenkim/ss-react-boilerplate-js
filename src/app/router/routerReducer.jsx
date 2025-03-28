@@ -1,11 +1,8 @@
-import {reduxMaker} from "src/app/store/redux/reduxUtils.jsx";
-
+import { reduxMaker } from 'src/app/store/redux/reduxUtils.jsx'
 
 const prefix = 'router'
 
-
 const asyncRequest = {}
-
 
 const localState = {
     location: {
@@ -16,11 +13,12 @@ const localState = {
 
 const localReducers = {
     locationChange: (state, action) => {
-        state.location = action.payload
+        return {
+            ...state,
+            location: action.payload,
+        }
     },
 }
-
-
 
 export const { routerSlice, routerSaga, routerAction } = reduxMaker(
     prefix,

@@ -8,6 +8,7 @@ const Sample = () => {
 
 
     useEffect(() => {
+        console.log(sampleAction);
         dispatch(sampleAction.getPokemon())
     }, []);
 

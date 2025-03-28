@@ -15,7 +15,7 @@ export default [
                 ecmaFeatures: { jsx: true },
                 sourceType: 'module',
             },
-            sourceType: "commonjs",
+
         },
 
         plugins: {
