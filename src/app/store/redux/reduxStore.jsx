@@ -2,15 +2,18 @@ import createSagaMiddleware from 'redux-saga'
 import { configureStore, Tuple } from '@reduxjs/toolkit'
 import { all } from 'redux-saga/effects'
 import {sampleSaga, sampleSlice} from "src/features/sample/sampleReducer.jsx";
+import {routerSaga, routerSlice} from "src/app/router/routerReducer.jsx";
 
 const reducers = {
+    routerReducer: routerSlice.reducer,
+
     sampleReducer: sampleSlice.reducer,
 
 }
 
 export function* rootSaga() {
     yield all([
-        sampleSaga(),
+        routerSaga(), sampleSaga(),
     ])
 }
 

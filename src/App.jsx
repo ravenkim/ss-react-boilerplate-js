@@ -1,26 +1,15 @@
-import { useEffect, useState } from 'react'
-import { Button } from 'src/shared/components/lib/shadcn/components/ui/button.jsx'
+import useRouteListener from "src/app/router/useRouteListener.jsx";
+import {RouterProvider} from "react-router";
+import router from "src/app/router/router.jsx";
 
 function App() {
-    const [count, setCount] = useState(0)
+
+    useRouteListener()
 
     return (
         <>
-            <div>
-                <Button>asd</Button>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            <RouterProvider router={router} />
+
         </>
     )
 }

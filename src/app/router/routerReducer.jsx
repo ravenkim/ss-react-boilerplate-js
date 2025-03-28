@@ -2,12 +2,12 @@ import { reduxMaker } from 'src/app/store/redux/reduxUtils.jsx'
 
 const prefix = 'router'
 
-const asyncRequest = {}
+const asyncRequest = []
 
 const localState = {
     location: {
-        state: {},
-        route: '',
+        path: window.location.pathname || null,
+        state: window.history.state?.usr || null,
     },
 }
 
