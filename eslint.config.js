@@ -9,18 +9,15 @@ export default [
         files: ['**/*.{js,jsx}'],
         languageOptions: {
             ecmaVersion: 2020,
-            globals: globals.browser,
+            globals: { ...globals.browser, ...globals.node },
             parserOptions: {
                 ecmaVersion: 'latest',
                 ecmaFeatures: { jsx: true },
                 sourceType: 'module',
             },
+            sourceType: "commonjs",
         },
-        env: {
-            node: true,
-            commonjs: true,
-            es2020: true,
-        },
+
         plugins: {
             'react-hooks': reactHooks,
             'react-refresh': reactRefresh,
