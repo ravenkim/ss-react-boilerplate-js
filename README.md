@@ -24,13 +24,16 @@ redux
 
 
 액션 명명 규칙 
+-------
 get~~
-
 edit ~~ 
 del ~~ 
 create __
-
+-------
 Status 뒤에 붙일것  
+
+로컬 리듀서도 
+액션 명이 Fail, Success 로 끝나면 안됨 << 자동 생성후 인식떄문에 (todo prefix 추가? 등의 개선 필요)
 
 
 

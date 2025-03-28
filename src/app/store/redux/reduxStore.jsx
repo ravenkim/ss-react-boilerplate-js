@@ -1,12 +1,21 @@
 import createSagaMiddleware from 'redux-saga'
 import { configureStore, Tuple } from '@reduxjs/toolkit'
 import { all } from 'redux-saga/effects'
+import {sampleSaga, sampleSlice} from "src/features/sample/sampleReducer.jsx";
 
-const reducers = {}
+const reducers = {
+    sampleReducer: sampleSlice.reducer,
+
+}
 
 export function* rootSaga() {
-    yield all([])
+    yield all([
+        sampleSaga(),
+    ])
 }
+
+
+const sagaMiddleware = createSagaMiddleware()
 
 const store = configureStore({
     reducer: reducers,
@@ -14,6 +23,5 @@ const store = configureStore({
     // devTools: process.env.NODE_ENV !== 'production', 보여지는 여부
 })
 
-const sagaMiddleware = createSagaMiddleware()
 sagaMiddleware.run(rootSaga)
 export default store
