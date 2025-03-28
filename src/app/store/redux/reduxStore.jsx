@@ -20,7 +20,7 @@ const sagaMiddleware = createSagaMiddleware()
 const store = configureStore({
     reducer: reducers,
     middleware: () => new Tuple(sagaMiddleware),
-    // devTools: process.env.NODE_ENV !== 'production', 보여지는 여부
+    devTools: process.env.NODE_ENV !== 'production', //보여지는지 여부
 })
 
 sagaMiddleware.run(rootSaga)
