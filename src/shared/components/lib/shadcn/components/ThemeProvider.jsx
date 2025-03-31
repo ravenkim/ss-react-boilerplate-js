@@ -28,7 +28,7 @@ const getStoredTheme = () => {
 applyTheme(getStoredTheme());
 
 export function ThemeProvider({ children, defaultTheme = "system" }) {
-    const [theme, setTheme] = useState(  () => defaultTheme || getStoredTheme() );
+    const [theme, setTheme] = useState(  () =>  getStoredTheme()  );
 
     useEffect(() => {
         applyTheme(theme);
