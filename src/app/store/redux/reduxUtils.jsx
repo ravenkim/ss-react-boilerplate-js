@@ -108,7 +108,6 @@ const createRequestSaga = (prefix, reducerName, apiRequest) => {
             })
         } catch (error) {
             //서버 자체의 오류 (ex) 서버가 죽음)
-            console.log(error)
             yield put({
                 type: `${prefix}/${reducerName}Fail`,
                 payload: '서버에 문제가 있습니다. 관리자에게 문의하세요',

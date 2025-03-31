@@ -1,25 +1,14 @@
-import {useEffect, useLayoutEffect, useState} from 'react'
-import {shallowEqual, useDispatch, useSelector} from 'react-redux'
-import {routerAction} from "src/app/router/routerReducer.jsx";
+import {  useLayoutEffect, useState } from 'react'
+import {  useDispatch } from 'react-redux'
+import { routerAction } from 'src/app/router/routerReducer.jsx'
 
 const useRouteListener = () => {
     const dispatch = useDispatch()
-
-    const { storeRoute } = useSelector(
-        ({ routerReducer }) => ({
-            storeRoute: routerReducer.location,
-        }),
-        shallowEqual,
-    )
 
     const [route, setRoute] = useState({
         path: window.location.pathname || null,
         state: window.history.state?.usr || null,
     })
-
-
-
-
 
     useLayoutEffect(() => {
         const originalPushState = window.history.pushState
@@ -55,7 +44,8 @@ const useRouteListener = () => {
     }, [])
 
     useLayoutEffect(() => {
-            dispatch(routerAction.locationChange(route))
+        console.log(route)
+        dispatch(routerAction.locationChange(route))
     }, [route])
 }
 

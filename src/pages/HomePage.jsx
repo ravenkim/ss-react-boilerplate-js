@@ -1,5 +1,19 @@
+import {Button} from "src/shared/components/lib/shadcn/components/ui/button.jsx";
+import {useNavigate} from "react-router";
+
 const HomePage = () => {
-    return <div className={'bg-primary h-8 w-500'}>xxx</div>
+
+
+
+    const navigate = useNavigate();
+    return <div className={' h-full w-500'}>
+
+
+        <Button
+            onClick={() => {navigate('/sample/sample')}}
+        >asdasdsa</Button>
+
+    </div>
 }
 
 export default HomePage
