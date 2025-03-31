@@ -6,7 +6,7 @@ const HomePage = () => {
 
 
     const navigate = useNavigate();
-    return <div className={' h-full w-500'}>
+    return <div className={' h-full '}>
 
 
         <Button
