@@ -17,6 +17,8 @@ const applyTheme = (theme) => {
     } else {
         root.classList.add(theme)
     }
+
+
 }
 
 // 로컬 스토리지에서 테마 가져오기 (초기 실행 시)

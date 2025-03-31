@@ -1,11 +1,10 @@
 todo 
 - no react 기능 추가 (base에)
 - 유저 핸들러
-- 번역기능 locale
 - 스토리북
 - 공통 컴포넌트 개발 
 - 폰트 처리 (성능 개선)
-- 
+- robot.txt 추가 
 
 
 

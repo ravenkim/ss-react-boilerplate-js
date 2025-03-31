@@ -7,18 +7,19 @@ import store from "src/app/store/redux/reduxStore.jsx";
 
 //translator
 import 'src/assets/locales/i18n'
+import {StrictMode} from "react";
 
 
 createRoot(document.getElementById('root')).render(
-    // <StrictMode>
-    //     <Provider store={store}>
-    //         <App/>
-    //     </Provider>
-    //
-    // </StrictMode>,
-
+    <StrictMode>
         <Provider store={store}>
             <App/>
-        </Provider>,
+        </Provider>
+
+    </StrictMode>,
+
+        // <Provider store={store}>
+        //     <App/>
+        // </Provider>,
 
 )
