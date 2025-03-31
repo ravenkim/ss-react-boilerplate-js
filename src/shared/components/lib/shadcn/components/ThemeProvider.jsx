@@ -21,13 +21,14 @@ const applyTheme = (theme) => {
 
 // 로컬 스토리지에서 테마 가져오기 (초기 실행 시)
 const getStoredTheme = () => {
+    //기본값을 여기서 설정 >> system 이거나 light or dark
     return localStorage.getItem(storageKey) || "system";
 };
 
 // 초기 실행 시 테마를 즉시 적용
 applyTheme(getStoredTheme());
 
-export function ThemeProvider({ children, defaultTheme = "system" }) {
+export function ThemeProvider({ children,  }) {
     const [theme, setTheme] = useState(  () =>  getStoredTheme()  );
 
     useEffect(() => {
