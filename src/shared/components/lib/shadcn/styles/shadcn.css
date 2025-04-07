@@ -1,3 +1,4 @@
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -111,4 +112,12 @@
     --color-sidebar-ring: var(--sidebar-ring);
     --color-warning: var(--warning);
     --color-warning-foreground: var(--warning-foreground);
+}
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
 }
