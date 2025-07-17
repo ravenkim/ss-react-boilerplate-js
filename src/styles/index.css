@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
-@import 'shadcn.pcss';
+@import 'src/shared/components/lib/shadcn/styles/shadcn.pcss';
 
 @import 'src/styles/variables.css';
 
